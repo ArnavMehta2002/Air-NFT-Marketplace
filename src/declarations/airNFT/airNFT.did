@@ -1,0 +1,11 @@
+service : {
+  ListItem: (principal, nat) -> (text);
+  getListedNFT: () -> (vec principal) query;
+  getListedNFTPrice: (principal) -> (nat) query;
+  getOriginalOwnerId: (principal) -> (principal) query;
+  getOwnedNFT: (principal) -> (vec principal) query;
+  getairNFTCanisterId: () -> (principal) query;
+  isLisited: (principal) -> (bool) query;
+  mint: (vec nat8, text) -> (principal);
+  transferNFT: (principal, principal, principal) -> (text);
+}
